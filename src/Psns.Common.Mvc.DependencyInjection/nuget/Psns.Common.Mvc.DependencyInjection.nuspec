@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Psns.Common.Mvc.DependencyInjection</id>
+    <title>Psns Mvc Dependency Injection</title>
+    <authors>Jeff Purcell</authors>
+    <owners>109.14</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Contains files needed to configure Ninject dependency injection for an Asp.net Mvc 4 project</description>
+    <projectUrl>https://github.com/PSNS-IMF/mvc-dependencyinjection</projectUrl>
+    <licenseUrl>https://github.com/PSNS-IMF/mvc-dependencyinjection/blob/master/LICENSE.md</licenseUrl>
+    <releaseNotes>
+      ## 1.0.0.3
+      ### Bug Fix
+      * Removed NinjectWebCommon from compilation because it causes a double-load since it is also
+        loaded into the target project.
+
+      ## 1.0.0.2
+      ### Features
+      * Removed .NET 4.5 support since it's no longer needed
+
+      ## 1.0.0.1
+      ### Features
+      * Placed NinjectDependencyResolver in dll and added tests; added support for .NET 4.5
+    </releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <version>$version$</version>
+    <tags>PSNS Ninject di ioc mvc4</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="4.0.30506.0" />
+      <dependency id="Ninject.MVC4" version="3.2.1" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="content\**\*.*" target="content" />
+    <file src="..\bin\$configuration$\Psns.Common.Mvc.DependencyInjection.*" target="lib\net40\" />
+    <file src="..\bin\$configuration$\net45\Psns.Common.Mvc.DependencyInjection.*" target="lib\net45\" />
+  </files>
+</package>
