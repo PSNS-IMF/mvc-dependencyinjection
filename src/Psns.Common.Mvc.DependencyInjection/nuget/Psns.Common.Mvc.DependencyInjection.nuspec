@@ -23,7 +23,6 @@
       ### Features
       * Placed NinjectDependencyResolver in dll and added tests; added support for .NET 4.5
     </releaseNotes>
-    <copyright>Copyright 2015</copyright>
     <version>$version$</version>
     <tags>PSNS Ninject di ioc mvc4</tags>
     <dependencies>
@@ -37,6 +36,5 @@
   <files>
     <file src="content\**\*.*" target="content" />
     <file src="..\bin\$configuration$\Psns.Common.Mvc.DependencyInjection.*" target="lib\net40\" />
-    <file src="..\bin\$configuration$\net45\Psns.Common.Mvc.DependencyInjection.*" target="lib\net45\" />
   </files>
 </package>
